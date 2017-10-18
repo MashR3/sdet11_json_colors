@@ -2,6 +2,7 @@ require 'json'
 
 json = JSON.parse(File.read('json_example.json'))
 
+class J
 # puts json.class
 
 # def check_all_keys(num1, num_last)
@@ -14,7 +15,7 @@ def check_all_keys
   "colors".each do |key, array|
   "colors".key?("color")
     if key == "color"
-      p key
+      p
     end
   end
 end

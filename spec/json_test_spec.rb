@@ -7,7 +7,7 @@ describe 'JSON example tests' do
   end
 
   it 'should have the key colour for each data object' do
-    expects @json.check_all_keys == 6
+    # expects @json.("colors").include?("color")
     # "colors".include?[:color]
   end
 
