@@ -7,8 +7,7 @@ describe 'JSON example tests' do
   end
 
   it 'should have the key colour for each data object' do
-    # expects @json.("colors").include?("color")
-    # "colors".include?[:color]
+    expect @json['colors'][0].keys.include?'color'
   end
 
   it "the colour red should have the hex value of '#FF0' " do
