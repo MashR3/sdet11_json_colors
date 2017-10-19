@@ -17,6 +17,7 @@ describe 'JSON example tests' do
 
   it "the colour red should have the hex value of '#FF0' " do
     # expect @json['colors'][Array].any? { |i| ["red", "FF0"].include? i }
+
     @json['colors'].each do |i|
       if i|"color"| == "red"
         expect(i["code"]["hex"]).to eq("#FF0")
@@ -25,6 +26,7 @@ describe 'JSON example tests' do
 
   it "the colour green should have the RGBA value of '0,255,0,1' " do
     # expect @json['colors'][Array].any? { |i| ["green", "0,255,0,1"].include? i }
+
     @json['colors'].each do |i|
       if i|"color"| == "red"
         expect(i["code"]["rgba"]).to eq([0,255,0,1])
