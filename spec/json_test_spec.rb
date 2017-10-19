@@ -16,11 +16,11 @@ describe 'JSON example tests' do
   end
 
   it "the colour red should have the hex value of '#FF0' " do
-    expect @json['colors'][].any? { |i| ["red", "FF0"].include? i }
+    expect @json['colors'][Array].any? { |i| ["red", "FF0"].include? i }
   end
 
   it "the colour green should have the RGBA value of '0,255,0,1' " do
-
+    expect @json['colors'][Array].any? { |i| ["green", "0,255,0,1"].include? i }
   end
 
 end
